@@ -1,0 +1,111 @@
+.banner{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.banner .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .banner .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .ban_img{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ban_img1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .ban_img img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .ban_hole{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .ban_con{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+}
+.offer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: larger;
+    color: #777777;
+}
+.fruit{
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.fruit span{
+    color: rgb(57, 57, 152);
+}
+.fresh{
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+.ban_con1 button{
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    color: #777777;
+    border: solid 1px black;
+}
+.ban_con1 button:hover{
+    color: whitesmoke;
+    transition: 1s;
+    cursor: pointer;
+    background-color: rgb(83, 93, 237);
+}
+.healthy{
+    color: gray;
+    margin-bottom: 20px;
+}
+.healthy:hover{
+    color: rgb(0, 166, 255);
+    transition: 1s;
+    cursor: pointer;
+}
+.ban_con1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,144 @@
+.category{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cat_img{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.offer_img{
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+
+.offer_img::before{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+    bottom: 135px;
+    right: -80px;
+}
+
+.offer_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+
+}
+
+
+.cat_con{
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+.cat_con h1{
+    font-family: "Quicksand", serif;
+    -webkit-text-stroke: 1px #DCDDDE;
+    font-size: 124px;
+    color: transparent;
+    font-weight: 900;
+    line-height:150px;
+}
+.cart1{
+    width: 115%;
+    height: 35%;
+    position: absolute;
+    right: 2%;
+    bottom: 0;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color:white;
+    
+}
+.cart_map{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 25px;
+    
+}
+.map1{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #e4fbe8;
+}
+.map1:hover img{
+    transform: scale(1.1);
+
+}
+.map1 img{
+    width: 50px;
+    height: 50px;
+    display: flex;align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    transition: 0.7s;
+}
+.drink{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-bottom: 5px;
+}
+
+.item{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 15px;
+    color: rgb(61, 60, 60);
+}
+.cart_map .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+.cart_map .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.cart_map .swiper-slide img {
+    width: 50px;
+    height: 50px;
+    display: flex;align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    transition: 0.7s;
+  }

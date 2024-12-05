@@ -1,0 +1,186 @@
+.foot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: white;
+}
+.foot-head{
+    width: 85%;
+    height: 100%;
+    gap: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.berry{
+    width: 25%;
+    height: 100%;
+}
+
+.logo_img{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.berry p{
+    height: 50px;
+    font-size: 15px;
+    margin-top: 30px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+.foot_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.google img{
+    border-radius: 8px;
+}
+.google{
+    padding: 5px;
+    border-radius: 8px;
+}
+.apple{
+    padding: 5px;
+    border-radius: 8px;
+}
+.apple img{
+    border-radius: 8px;
+}
+
+.cate{
+    width: 15%;
+    height: 100%;
+}
+.cate p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+.cate p:hover{
+    color: rgb(179, 186, 192);
+    transition: 1s;
+}
+.cate h1{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    font-size:20px;
+}
+.company{
+    width: 15%;
+    height: 100%;
+}
+.company h1{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    font-size:20px;
+}
+.company p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+.company p:hover{
+    color: rgb(179, 186, 192);
+    transition: 1s;
+}
+.account{
+    width: 15%;
+    height: 100%;
+}
+.account h1{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    font-size:20px;
+}
+.account p{
+    font-size: 15px;
+    margin-top: 15px;
+}
+.account p:hover{
+    color: rgb(179, 186, 192);
+    transition: 1s;
+}
+.contact{
+    width: 25%;
+    height: 100%;
+}
+.contact h1{
+    height: 80px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    font-size:20px;
+    margin-left: 10px;
+}
+
+.loc{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    /* background-color: rgb(100, 100, 238); */
+}
+.loc_i{
+    font-size: 30px;
+    color: rgb(100, 100, 238);
+}
+.whats{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 15px;
+}
+.whats_i{
+    font-size: 18px;
+    color: rgb(100, 100, 238);
+}
+.mail{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 15px;
+}
+.mail_i{
+    font-size: 18px;
+    color: rgb(100, 100, 238);
+}
+.foot_icon{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+.foot_icon span{
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: transparent;
+    color: aliceblue;
+    background-color: #3D4750;
+}
+.foot_icon span:hover{
+    background-color: rgb(92, 92, 210);
+    transition: 1s;
+}

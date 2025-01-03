@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Category.css";
 import "swiper/css/navigation";
 import category from "../../Assets/category.jpg";
@@ -10,8 +10,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
+import axios from 'axios';
 
 const Category = () => {
+  const [view,setview] = useState([])
   let cart = [
     {
       image: veg,
@@ -76,6 +78,22 @@ const Category = () => {
   ];
   console.log(cart);
 
+  useEffect(()=>{
+    async function viewAll() {
+      try {
+        let request = await axios.get("http://localhost:4000/category/viewAll")
+        console.log(request.data.data);
+        setview(request.data.data)
+        
+      } catch (error) {
+        console.log(error);
+        
+        
+      }
+    }
+viewAll()
+  },[])
+
   return (
     <>
       <div className="category">
@@ -100,12 +118,12 @@ const Category = () => {
                   modules={[Pagination, Autoplay]}
                   className="mySwiper"
                 >
-                  {cart.map(function (data) {
+                  {view.map(function (data) {
                     return (
                       <SwiperSlide>
                         <div className="map1">
-                          <img src={data.image} alt="" />
-                          <p className="drink">{data.title}</p>
+                          <img src={data.categoryimg} alt="" />
+                          <p className="drink">{data.categoryname}</p>
                           <p className="item">{data.items}</p>
                         </div>
                       </SwiperSlide>

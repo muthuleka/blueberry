@@ -25,7 +25,7 @@ const Banner = () => {
         >
           <SwiperSlide className="ban_img1">
             <div className="ban_hole">
-              <div className="ban_con">
+              <div className="ban_con1">
                 <p className="offer">Flat 30% offer</p>
                 <p className="fruit">
                   Explore <span>Healthy</span>

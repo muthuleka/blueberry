@@ -1,0 +1,38 @@
+.blog{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog_head{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    background-color: pink;
+}
+.blog_left{
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog_left img {
+    width: 100%;
+}
+.blog_right{
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+    padding: 20px;
+}
+h2{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+.blog_right span{
+    color: rgb(104, 104, 189);
+}

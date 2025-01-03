@@ -112,7 +112,7 @@ function pageclose(params) {
           <p className='text-gray-500 font-medium hover:text-blue-400 transition-all duration-700'>Home</p>
 
           </NavLink>
-          <NavLink to = "Categories">
+          <NavLink to = "/Categories">
           <p className='text-gray-500 font-medium flex items-center justify-center hover:text-blue-400 transition-all duration-700'>Categories<RxDot className='text-xl text-gray-500 hover:text-blue-400 transition-all duration-700 '/></p>
 
           </NavLink>
@@ -139,9 +139,13 @@ function pageclose(params) {
           <p className='text-gray-500 font-medium flex items-center justify-center hover:text-blue-400 transition-all duration-700'>Products <RxDot className='text-xl text-gray-500 hover:text-blue-400 transition-all duration-700 '/></p>
 
           </NavLink>
+          <NavLink to = "/Blog">
           <p className='text-gray-500 font-medium flex items-center justify-center hover:text-blue-400 transition-all duration-700'>Blog <RxDot className='text-xl text-gray-500 hover:text-blue-400 transition-all duration-700'/></p>
-          <p className='text-gray-500 font-medium flex items-center justify-center hover:text-blue-400 transition-all duration-700'><GoShieldCheck className='text-sm text-gray-500 mr-2 hover:text-blue-400 transition-all duration-700'/>Offers</p>
 
+          </NavLink>
+          <NavLink to = "/Offers">
+          <p className='text-gray-500 font-medium flex items-center justify-center hover:text-blue-400 transition-all duration-700'><GoShieldCheck className='text-sm text-gray-500 mr-2 hover:text-blue-400 transition-all duration-700'/>Offers</p>
+          </NavLink>
         </div>
         <div className='w-[200px] h-[50px] flex justify-center items-center border-2 rounded   border-gray-200 text-gray-500'>
           <p><IoLocationOutline className='text-xl flex items-start justify-start' /></p>

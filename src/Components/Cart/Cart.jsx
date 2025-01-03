@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Cart.css"
 import cartimg from "../../Assets/cartimg.jpg"
 import { MdOutlineStarBorder } from "react-icons/md";
@@ -8,6 +8,11 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiEye } from "react-icons/fi";
 import { GoGitCompare } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { useState } from 'react';
+import axios from 'axios'
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { myreducers } from '../../Redux/Store';
 
 
 
@@ -288,7 +293,39 @@ const Cart = () => {
       
     
   ];
-  
+  const [product, setproduct] = useState([])
+  let dispatch = useDispatch()
+
+  useEffect(()=>{
+    async function viewAll() {
+      try {
+        let response = await axios.get("http://localhost:4000/product/viewAll")
+        console.log((response.data.data));
+        setproduct(response.data.data)
+        
+      } catch (error) {
+        console.log(error);
+        
+      }
+    }
+  viewAll()
+  },[])
+
+  async function viewOne(event) {
+    console.log(event);
+    
+    try {
+      let request = await axios.get(`http://localhost:4000/product/view/${event}`)
+      console.log(request.data.data);
+      
+      dispatch(myreducers.viewOnedata(request.data.data))
+
+    } catch (error) {
+      console.log(error);
+      
+    }
+   
+  }
   return (
     <>
       <div className='cart'>
@@ -298,23 +335,25 @@ const Cart = () => {
         </div>
         <div className='grid'>
         {
-          foodCategories.map(function (food) {
+          product.map(function (data) {
             return(
             <div className='props'>
             <div className='propsimg'>
             <div className='i'>
-            <img src={cartimg} className = 'img1'alt="" />
-            <img src={cart}  className = 'img2'alt="" />
+            <img src={data.productimg1} className = 'img1'alt="" />
+            <img src={data.productimg2}  className = 'img2'alt="" />
             <div className='cart_i'>
               <p><FaRegHeart className='ca'/></p>
-                <p><FiEye className='ca'/></p>
+                <Link to = '/pop'>
+                <p><FiEye className='ca' onClick={()=>viewOne(data.id)}/></p>
+                </Link>
                 <p><GoGitCompare className='ca'/></p>
                 <p><HiOutlineShoppingBag className='ca'/></p>
             </div>
             </div>
             <div className='detail'>
               <div className='star'>
-                  <p>{food.categoryName}</p>
+                  <p>{data.categoryname}</p>
                 <div className='star1'>
                 <p><MdOutlineStarPurple500 /></p>
                 <p><MdOutlineStarPurple500 /></p>
@@ -324,13 +363,13 @@ const Cart = () => {
                 </div>
               </div>
             
-                 <p className='ch'>{food.productName}</p>
+                 <p className='ch'>{data.productname}</p>
               <div className='price'>
               <div className='price1'>
-                  <p>{food.offerPrice}</p>
-                  <p>{food.rating}</p>
+                  <p>{data.offerprice}</p>
+                  <p>{data.rating}</p>
               </div>
-                  <p>{food.itemCount}</p>
+                  <p>{data.quantity}</p>
               </div>
               
             </div>
